@@ -15,7 +15,7 @@ public class ContactBook<T extends Contact> {
                 }
         }
         public void congratulate(String name) {
-                boolean contactPresented = false; //проверяем есть ли контакт в базе
+                boolean contactPresented = false;
                 // Найдите контакт в книге по имени, и отправьте ему сообщение с помощью метода sendMessage()
                 for (T contact : contacts) {
                         if (contact.getName().equals(name)) {
